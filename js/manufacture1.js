@@ -6,43 +6,39 @@ $(document).ready(function() {
 	});
 	//点击分类给分类END
 	//二级分类左侧
-	$(".pullDownLeft ul li").click(function() {
-		
-		var Number = $(this).index()
-		if($(this).index() == 0) {
-			$(".pullDownRight ul").show();
-		} else {
-			Number = --Number;
-			$(".pullDownRight ul:eq(" + Number + ")").show().siblings().hide();
+	var topLiIndex=0;
+	$("body>.classify .classifytop ul li").click(function(){
+		if ($(this).is(".classifyAdd")) {
+			$(".classify").hide();
+		} else{
+			topLiIndex=$(this).index();
+			$(this).children("i").html("&#xe602;");
+			$(this).addClass("classifyAdd").siblings().removeClass("classifyAdd").children("i").html("&#xe603;");
+			$(".classify .classifyBottom:eq("+topLiIndex+")").show().siblings().hide();
 		}
-		$(this).addClass("pullDownLeftAdd").siblings().removeClass("pullDownLeftAdd")
-	});
-	//二级分类左侧END
-	//二级分类右侧
-	$(".pullDownRight").click(function() {
-		$("#pullDown").hide();
-		$("#clickPullDown").removeClass("icon-9").addClass("icon-10")
-		$(".classIFY").removeClass("screenTop")
-	});
-	//二级分类右侧END
-	//	滚动条事件
-	var scrollhight
-	$(window).scroll(function() {
 		
-		scrollhight = document.body.scrollTop;
-		if(scrollhight > 250) {
-			$(".classIFY").addClass("screenTop")
-
-		} else {
-			$(".classIFY").removeClass("screenTop")
-
-		}
+	})
+	$("body>.classify .classifyBottom .col-xs-5 ul li").click(function(){
+		var liIndex=$(this).index();
+		$(this).addClass("classifyBottomAdd").siblings().removeClass("classifyBottomAdd");
+		$(".classify .classifyBottom:eq("+topLiIndex+") .col-xs-7 ul:eq("+liIndex+")").show().siblings().hide();
+	})
+	//点击任意处隐藏
+	// 点击#pulldown任何地方  让#pulldown隐藏
+	$("body>.classify").click(function(){  
+		$("body>.classify").hide();
+	
+	});
+	// 点击#pulldown>div>div,阻拦(让pulldown隐藏)(stopPropagation阻拦click事件冒泡)
+	//及实现了 点击#pulldown>div>div之外的任何地方  让#pulldown隐藏 
+	$('body>.classify div').click(function(event){ 
+		event.stopPropagation(); 
 	});
 	$("#clickPullDown").click(function() {
-		$("body>.row").show();
+		$("body>.classify").show();
 	});
 	$("#clickPullDown1").click(function() {
-		$("body>.row").hide();
+		$("body>.classify").hide();
 	});
 	//	滚动条事件END
 	//收藏END

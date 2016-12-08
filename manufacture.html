@@ -13,106 +13,244 @@
 	</head>
 
 	<body>
-		<!--顶部信息栏-->
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">布艺沙发</a>
-				</div>
+	
+		<div class="classify" style="display: none;">
+			<div class="classifytop">
+				<ul>
+					<li class="classifyAdd">位置<i class="iconfont ">&#xe602;</i></li>
+					<li>风格<i class="iconfont">&#xe603;</i></li>
+					<li>用途<i class="iconfont">&#xe603;</i></li>
+				</ul>
 			</div>
-		</nav>
-		<div class="row" style="display: none;">
-				<div class="col-xs-12 col-sm-12 padding screen">
-					<div class="classIFY">
-						<!--分类-->
-						<div id="tagnav" class=" classify list-inline">
-							<ul class="weui-navigator-list">
-								<li class="">全部</li>
-								<li>卧室室</li>
-								<li>客厅室室</li>
-								<li>餐厅室室室</li>
-								<li>厨房</li>
-								<li>书房</li>
-								<li class="iconfont icon-10 liAdd" id="clickPullDown1">&#xe602;</li>
-							</ul>
-						</div>
+			<div>
+				<div class="classifyBottom">
+					<div class="col-xs-5">
+						<ul>
+							<li class="classifyBottomAdd">光明</li>
+							<li>宏泰</li>
+							<li>中心市场</li>
+						</ul>
+					</div>
+					<div class="col-xs-7">
+						<ul>
+							<li>
+								<a href="#">A区一楼</a>
+							</li>
+							<li>
+								<a href="#">A区二楼</a>
+							</li>
+							<li>
+								<a href="#">A区三楼</a>
+							</li>
+							<li>
+								<a href="#">B区一楼</a>
+							</li>
+							<li>
+								<a href="#">B区二楼</a>
+							</li>
+							<li>
+								<a href="#">B区三楼</a>
+							</li>
+							<li>
+								<a href="#">C区一楼</a>
+							</li>
+							<li>
+								<a href="#">C区二楼</a>
+							</li>
+							<li>
+								<a href="#">C区三楼</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">宏泰A区一楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰A区二楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰A区三楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰C区一楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰C区二楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰C区三楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰B区一楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰B区二楼</a>
+							</li>
+							<li>
+								<a href="#">宏泰B区三楼</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">中心市场一楼</a>
+							</li>
+							<li>
+								<a href="#">中心市场二楼</a>
+							</li>
+							<li>
+								<a href="#">中心市场三楼</a>
+							</li>
+						</ul>
 
-						<!--下拉分类-->
-						<div class="col-xs-12 col-sm-12" id="pullDown" >
-							<div class="pullDownLeft col-xs-4 col-sm-4">
-								<ul>
-									<li  class="pullDownLeftAdd">全部<span class="icon icon-108 right"></li>
-									<li>卧室<span class="icon icon-108 right"></li>
-									<li>客厅<span class="icon icon-108 right"></li>
-									<li>餐厅<span class="icon icon-108 right"></li>
-									<li>厨房<span class="icon icon-108 right"></li>
-									<li>书房<span class="icon icon-108 right"></li>
-								</ul>
-							</div>
-							<div class="pullDownRight col-xs-8 col-sm-8">
-								<ul>卧室
-									<li><a href="">卧室</a></li>
-									<li><a href="">卧室</a></li>
-									<li><a href="">卧室</a></li>
-									<li><a href="">卧室</a></li>
-									<li><a href="">卧室</a></li>
-									<li><a href="">卧室</a></li>
-									<li><a href="">卧室</a></li>
-									<li><a href="">卧室</a></li>
-								</ul>
-								<ul>客厅：
-									<li><a href="">客厅</a></li>
-									<li><a href="">客厅</a></li>
-									<li><a href="">客厅</a></li>
-									<li><a href="">客厅</a></li>
-									<li><a href="">客厅</a></li>
-									<li><a href="">客厅</a></li>
-									<li><a href="">客厅</a></li>
-									<li><a href="">客厅</a></li>
-									
-								</ul>
-								<ul>餐厅：
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									<li><a href="">餐厅</a></li>
-									
-								</ul>
-								<ul>厨房：
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-									<li><a href="">厨房</a></li>
-								</ul>
-								<ul>书房：
-									<li><a href="">书房</a></li>
-									<li><a href="">书房</a></li>
-									<li><a href="">书房</a></li>
-									<li><a href="">书房</a></li>
-									<li><a href="">书房</a></li>
-									<li><a href="">书房</a></li>
-									<li><a href="">书房</a></li>
-									<li><a href="">书房</a></li>
-									<li><a> &nbsp;</a></li>
-								</ul>
-								
-							</div>
-						</div>
 					</div>
 				</div>
+				<div class="classifyBottom" style="display: none;">
+					<div class="col-xs-5">
+						<ul>
+							<li class="classifyBottomAdd">风格</li>
+							<li>材料</li>
+							<li>分类</li>
+						</ul>
+					</div>
+					<div class="col-xs-7">
+						<ul>
+							<li>
+								<a href="#">中国现代</a>
+							</li>
+							<li>
+								<a href="#">中国古典</a>
+							</li>
+							<li>
+								<a href="#">仿古</a>
+							</li>
+							<li>
+								<a href="#">欧式</a>
+							</li>
+							<li>
+								<a href="#">美式</a>
+							</li>
+							<li>
+								<a href="#">韩式</a>
+							</li>
+							<li>
+								<a href="#">日式</a>
+							</li>
+
+						</ul>
+
+						<ul>
+							<li>
+								<a href="#">实木</a>
+							</li>
+							<li>
+								<a href="#">橡木</a>
+							</li>
+							<li>
+								<a href="#">红木</a>
+							</li>
+							<li>
+								<a href="#">杉木</a>
+							</li>
+							<li>
+								<a href="#">核桃木</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">分类一</a>
+							</li>
+							<li>
+								<a href="#">分类一</a>
+							</li>
+							<li>
+								<a href="#">分类一</a>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+				<div class="classifyBottom" style="display: none;">
+					<div class="col-xs-5">
+						<ul>
+							<li class="classifyBottomAdd">卧室</li>
+							<li>客厅</li>
+							<li>书房</li>
+							<li>餐厅</li>
+							<li>其它</li>
+						</ul>
+					</div>
+					<div class="col-xs-7">
+						<ul>
+							<li>
+								<a href="#">床</a>
+							</li>
+							<li>
+								<a href="#">衣柜</a>
+							</li>
+							<li>
+								<a href="#">化妆台</a>
+							</li>
+							<li>
+								<a href="#">鞋柜</a>
+							</li>
+							<li>
+								<a href="#">床头柜</a>
+							</li>
+
+						</ul>
+
+						<ul>
+							<li>
+								<a href="#">沙发</a>
+							</li>
+							<li>
+								<a href="#">茶几</a>
+							</li>
+							<li>
+								<a href="#">电视柜</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">书柜</a>
+							</li>
+							<li>
+								<a href="#">书桌</a>
+							</li>
+							<li>
+								<a href="#">书椅</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">餐桌</a>
+							</li>
+							<li>
+								<a href="#">餐椅</a>
+							</li>
+							<li>
+								<a href="#">酒柜</a>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a href="#">花架</a>
+							</li>
+							<li>
+								<a href="#">c</a>
+							</li>
+							<li>
+								<a href="#">cc</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
 			</div>
+		</div>
 		<div class="container" id="content">
 			<div id="myCarousel" class="carousel slide ">
 				<div id="focus" class="focus">
@@ -146,12 +284,22 @@
 						<!--分类-->
 						<div id="tagnav" class=" classify list-inline">
 							<ul class="weui-navigator-list">
-								<li class="">全部</li>
-								<li>卧室室</li>
-								<li>客厅室室</li>
-								<li>餐厅室室室</li>
-								<li>厨房</li>
-								<li>书房</li>
+								 <li class="dropdown">
+								 
+							        <a class="dropdown-toggle iconfont" data-toggle="dropdown" href="#">&#xe625;</a>
+							         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							         	<form action="" method="post" class="bs-example bs-example-form" role="form">
+									        <div role="presentation" class="input-group">
+												 <input type="text" class="form-control">
+									            <span class="input-group-addon iconfont">&#xe625;</span>
+									        </div>
+								       	</form>
+								    </ul>
+								   
+							    </li>
+								<li><a href="">按点击率</a></li>
+								<li><a href="">按更新时间</a></li>
+								
 								<li class="iconfont icon-10 liAdd" id="clickPullDown">&#xe637;</li>
 							</ul>
 						</div>
