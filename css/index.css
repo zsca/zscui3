@@ -190,6 +190,7 @@ body .container .row>p {
 	padding: 0;
 	border: 1px solid gainsboro;
 	margin-bottom: 20px;
+	border-top: 3px solid #000000;
 	background-color: white;
 }
 
@@ -203,12 +204,11 @@ body .container .row>p {
 }
 
 .container>div.row>div.box>.col-xs-12>div {
-	height: 230px;
+	height: 206px;
 	width: 100%;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	background-color: #EEEEEE;
-	padding: 8px 0;
 	z-index: 4;
 }
 
