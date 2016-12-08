@@ -40,7 +40,18 @@ $(document).ready(function() {
 	$("#clickPullDown1").click(function() {
 		$("body>.classify").hide();
 	});
-	//	滚动条事件END
-	//收藏END
+	//	滚动条事件
+		$(window).scroll(function() {
+		var scrollhight
+		scrollhight = document.body.scrollTop;
+		if(scrollhight > 250) {
+			$("body>.container div.row").addClass("screenTop")
+
+		} else {
+			$("body>.container div.row").removeClass("screenTop")
+
+		}
+	});
+	
 
 })

@@ -479,3 +479,10 @@ body>.row .screen .classIFY #pullDown .pullDownLeft ul {
 .pagination li {
 	display: inline-block;
 }
+/*滚动条添加*/
+.screenTop{
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	width: 100vw;
+}
