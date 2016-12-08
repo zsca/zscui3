@@ -121,9 +121,10 @@ body .container #myCarousel .focus .hd {
 
 body .container #myCarousel .focus .hd ul {
 	display: inline-block;
-	height: 5px;
+	float: right;
+	margin-right: 10%;
+	height: 7px;
 	padding: 0;
-	background-color: rgba(255, 255, 255, 0.7);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -133,8 +134,8 @@ body .container #myCarousel .focus .hd ul {
 
 body .container #myCarousel .focus .hd ul li {
 	display: inline-block;
-	width: 5px;
-	height: 5px;
+	width: 7px;
+	height: 7px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -145,7 +146,7 @@ body .container #myCarousel .focus .hd ul li {
 }
 
 body .container #myCarousel .focus .hd ul .on {
-	background: #FE6C9C;
+	background:#80BD6D;
 }
 
 body .container #myCarousel .focus .bd {
